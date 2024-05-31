@@ -19,7 +19,7 @@ jobs:
           java-version: '17'
 
       - name: Build Project
-        run: mvn clean install -DskipTests
+        run: mvn clean install -DskipTests -X
 
       - name: Upload Artifact for deployment job
         uses: actions/upload-artifact@v2
