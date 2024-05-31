@@ -25,7 +25,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: demo
-          path: ${{ github.workspace }}/target/*.jar
+          path: ${{ github.workspace }}/target/demo-1.0-SNAPSHOT.jar
 
   deploy:
     runs-on: ubuntu-latest
@@ -41,4 +41,4 @@ jobs:
         with:
           app-name: springboot-demo
           publish-profile: ${{ secrets.azureWebAppPublishProfile }}
-          package: '/*.jar*'
+          package: ${{ github.workspace }}/demo/demo-1.0-SNAPSHOT.jar
