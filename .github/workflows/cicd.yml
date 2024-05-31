@@ -41,4 +41,4 @@ jobs:
         with:
           app-name: springboot-demo
           publish-profile: ${{ secrets.azureWebAppPublishProfile }}
-          package: '/*.jar*
+          package: '/*.jar*'
