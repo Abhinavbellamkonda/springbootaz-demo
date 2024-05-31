@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: demo
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/demoo?createDatabaseIfNotExist=true
+    username: root
+    password: Abhinav@123
+  jpa:
+    hibernate:
+      ddl-auto: 'update'
+    show-sql: true
+
